@@ -9,7 +9,7 @@ body{
 header{
     background: linear-gradient(135deg, #000855, #3a0ca3);
     background-color: black;
-    color: white;
+    color: rgb(243, 243, 243);
     text-align: center;
     padding: 10px;
     font-size: 25px;
@@ -41,7 +41,6 @@ section{
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;}
 
 .lista-produtos {
@@ -76,4 +75,16 @@ section{
     background: linear-gradient(135deg, #000000, #3a0ca3);
     border-radius: 8px;
 }
-
+.produto h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.produto p{
+    font-size: 16px;
+    color: #333;
+}
+.produto:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-30px);
+    transition: all 0.3s ease;
+}
