@@ -11,36 +11,88 @@ body {
 }
 
 /* HEADER */
-header {
-  height: 8rem;
-  background: linear-gradient(135deg, #000855, #3a0ca3);
-  padding: 15px;
-  text-align: center;
-}
 header h1 {
+  text-align: center ;
   font-size: 32px;
   margin-top: 20px;
 }
+
 /* NAV */
-nav {
-  display: flex;
-  justify-content: center;
-    font-weight: bold;
-  gap: 20px;
-  padding: 12px;
-  background: #000;
+.menu {
+ margin-left: 15px;
+  width: 10%;
+  text-align: center;
+  position: relative;
 }
 
-nav a {
+/* REMOVE SETINHA PADRÃO */
+.menu details summary {
+  text-align: center;
+  background-color: #2d2597;
+  list-style: none;
+  cursor: pointer;
+}
+.menu details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* BOTÃO DO MENU */
+.menu-btn {
+  font-size: 26px;
+  padding: 8px 14px;
+  background: #000000;
+  color: white;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background: #3a0ca3;
+}
+
+/* SUBMENU */
+.submenu {
+  
+  position: absolute;
+  top: 50px;
+  background: #3333339c;
+  border-radius: 10px;
+  padding: 10px 0;
+  min-height: 400px;
+  min-width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  list-style: none;
+}
+
+/* LINKS */
+.submenu li a {
+  background-color: #303030;
+  border-radius: 5px;
+  display: block;
+  padding: 20px 20px;
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-nav a:hover {
-  text-decoration: dotted;
-  color: #eeff00;
-  font-weight: bold;
+.submenu li a:hover {
+  background: #3a0ca3;
+}
+
+/* ANIMAÇÃO SUAVE */
+details[open] .submenu {
+  animation: fadeDown 0.25s ease;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* CONTAINER */
