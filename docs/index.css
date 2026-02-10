@@ -1,128 +1,169 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-     background:#210277;
-  color: rgb(255, 238, 0);
+body{
+  font-family:Arial, sans-serif;
+  background:#ffffff;
+  color:#000000;
 }
 
-/* HEADER */
-header h1 {
-  text-align: center ;
-  font-size: 32px;
-  margin-top: 20px;
+/* ===== HEADER ===== */
+header{
+  padding:20px 10px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-/* ===== MENU PRINCIPAL HORIZONTAL ===== */
+header h1{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+/* ===== MENU ===== */
 .menu{
-  margin-top: 40px;
-  margin-bottom: 40px;
   width:100%;
-  display:flex;
-  justify-content:center;
-  background-color:#000000;
+  background:#000;
 }
 
 .menu .submenu{
-  display:flex;            
-  gap:20px;                  
+  display:flex;
+  justify-content:center;
+  gap:20px;
   list-style:none;
-  padding:0;
-  margin:0;
+  padding:15px;
+  flex-wrap:wrap;
 }
 
 .menu .submenu li a{
   display:block;
   padding:12px 20px;
-  color:rgb(255, 255, 255);
+  color:#ffffff;
   text-decoration:none;
   font-size:16px;
   border-radius:8px;
   transition:0.3s;
-  background-color:transparent;
 }
 
 .menu .submenu li a:hover{
-  background-color:#3a0ca3;
+  background:#d3d3d3;
   box-shadow:0 5px 15px rgba(58,12,163,0.5);
 }
 
-
-/* CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px;
+/* ===== CONTAINER ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px;
 }
 
-/* SEÇÕES */
-.produtos {
-  margin-top: 25px;
-  padding: 15px;
-  background: linear-gradient(135deg, #340086, #3a0ca3);
-  border-radius: 10px;
+/* ===== SEÇÕES ===== */
+.produtos{
+  margin-top:30px;
+  padding:20px;
+  background:linear-gradient(135deg,#cccccc,#ffffff);
+  border-radius:12px;
 }
 
-.produtos h2 {
-  text-align: center;
-  margin-bottom: 15px;
-  color: #fbff00;
-}
-
-/* LISTA */
-.lista-produtos {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-}
-
-/* CARD */
-.produto {
-  background: #000000;
-  color: #eeff00;
-font-weight: bold;
-  border-radius: 10px;
-  width: 99%;
-  height: auto;
+.produtos h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#0a0909;
   padding: 10px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.produto:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+/* ===== LISTA ===== */
+.lista-produtos{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:20px;
 }
 
-/* IMAGEM */
-.produto img {
-    padding: 10px;
-  width: 100%;
-  max-height: 250px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+/* ===== CARD ===== */
+.produto{
+  background:#000000;
+  border-radius:12px;
+  padding:15px;
+  border-bottom: 4px solid #000000;
+  text-align:center;
+  font-weight:bold;
+  transition:0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;;
 }
 
-.produto:hover img {
-  transform: scale(1.08);
-}
-
-/* TEXTO */
-.produto p {
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-footer {
-  background: #000000;
-  padding: 30px;
+.produto:hover{
+  transform:translateY(-6px);
+  background-color: #000000;
   color: #ffffff;
-  text-align: center;
-  margin-top: 40px;
+  box-shadow:0 8px 15px rgba(0,0,0,0.3);
+}
+
+.produto img{
+  height: auto;
+  width: auto;
+  width:90%;
+  max-height:220px;
+  object-fit:contain;
+  transition:0.3s;
+}
+
+.produto:hover img{
+  transform:scale(1.05);
+}
+
+.produto p{
+  color: #fdf900;
+  margin-top:1%;
+  font-size: 1.5rem;
+  line-height:1.4;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#000;
+  padding:25px;
+  text-align:center;
+  color:#fff;
+  margin-top:40px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:600px){
+
+  .produto{
+    flex-direction:column;
+    text-align: center;
+  }
+  header h1{
+    font-size:24px;
+  }
+
+  .menu .submenu{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+  }
+
+  .menu .submenu li a{
+    width:100%;
+    text-align:center;
+  }
+
+  .produtos{
+    padding:15px;
+  }
+
+  .produtos h2{
+    font-size:20px;
+  }
+
+  .produto p{
+    font-size:13px;
+  }
 }

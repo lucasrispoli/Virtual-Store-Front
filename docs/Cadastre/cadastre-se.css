@@ -9,12 +9,12 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background:#210277;
+  background:#ffffff;
   font-family:Arial, sans-serif;
 }
 
 .cadastro-container{
-  background:#0d0221;
+  background:#000000;
   padding:40px;
   width:100%;
   max-width:400px;
@@ -48,7 +48,7 @@ body{
 .cadastro-container button{
   width:100%;
   padding:12px;
-  background:#210277;
+  background:#0e0277;
   color:#ffee00;
   border:none;
   border-radius:8px;

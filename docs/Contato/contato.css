@@ -4,9 +4,52 @@
 }
 body{
     font-family:Arial, sans-serif;
-    background-color:#000000;
-    color:#eeff00;}
+    background-color:#ffffff;
+    color:#000000;}
     
+header{
+  padding:20px 10px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header h1{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+/* ===== MENU ===== */
+.menu{
+  width:100%;
+  background:#000;
+}
+
+.menu .submenu{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  list-style:none;
+  padding:15px;
+  flex-wrap:wrap;
+}
+
+.menu .submenu li a{
+  display:block;
+  padding:12px 20px;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:16px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.menu .submenu li a:hover{
+  background:#d3d3d3;
+  box-shadow:0 5px 15px rgba(58,12,163,0.5);
+}
+
+
     h1{
         text-align:center;
         margin-top:20px;
