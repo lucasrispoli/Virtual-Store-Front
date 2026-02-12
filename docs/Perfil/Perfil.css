@@ -1,0 +1,106 @@
+
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#ffffff;
+  color:#000000;
+}
+
+/* ===== HEADER ===== */
+header{
+  padding:20px 10px;
+  background-color:#ffffff;
+}
+
+header h1{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+/* ===== MENU ===== */
+.menu{
+  width:100%;
+  background:#000;
+}
+
+.menu .submenu{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  list-style:none;
+  padding:15px;
+  flex-wrap:wrap;
+}
+
+.menu .submenu li a{
+  display:block;
+  padding:12px 20px;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:16px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.menu .submenu li a:hover{
+  background:#d3d3d3;
+}
+
+/* ===== TITULO ===== */
+.bemvindo{
+  text-align:center;
+  margin:40px 0;
+  font-size:20px;
+}
+
+/* ===== PERFIL LAYOUT ===== */
+.perfil-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+  width:80%;
+  margin:0 auto 60px auto;
+  flex-wrap:wrap;
+}
+
+/* FOTO */
+.foto{
+  display:flex;
+  justify-content:center;
+}
+
+.foto img{
+  width:280px;
+  height:280px;
+  object-fit:cover;
+  border-radius:50%;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* INFORMAÇÕES */
+.informacoes{
+  background:#000;
+  color:#ffffff;
+  padding:30px;
+  border-radius:15px;
+  width:350px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.informacoes h3{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.informacoes p{
+  margin-bottom:15px;
+  font-size:16px;
+}

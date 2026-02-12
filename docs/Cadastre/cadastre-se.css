@@ -6,21 +6,67 @@
 
 body{
   height:100vh;
-  display:flex;
   justify-content:center;
   align-items:center;
-  background:#ffffff;
+  background:#252525;
   font-family:Arial, sans-serif;
 }
 
+
+/* ===== HEADER ===== */
+header{
+  padding:20px 10px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+header h1{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+/* ===== MENU ===== */
+.menu{
+  width:100%;
+  background:#000;
+}
+
+.menu .submenu{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  list-style:none;
+  padding:15px;
+  flex-wrap:wrap;
+}
+
+.menu .submenu li a{
+  display:block;
+  padding:12px 20px;
+  color:#ffffff;
+  text-decoration:none;
+  font-size:16px;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.menu .submenu li a:hover{
+  background:#ffffff;
+  box-shadow:0 5px 15px rgba(58,12,163,0.5);
+}
+
 .cadastro-container{
+
+  margin:auto;
+  text-align: center;
   background:#000000;
   padding:40px;
   width:100%;
   max-width:400px;
   border-radius:12px;
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
-  color:white;
+  color:rgb(255, 255, 255);
 }
 
 .cadastro-container h2{

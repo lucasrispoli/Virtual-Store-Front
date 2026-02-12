@@ -1,10 +1,11 @@
 console.log("JS carregado");
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formCadastro");
 
   form.addEventListener("submit", async (event) => {
-    event.preventDefault(); // 🚫 impede reload
+    event.preventDefault(); 
 
     console.log("Botão cadastrar clicado");
 
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nome,
       email,
       cpf,
-      dataNascimento // yyyy-MM-dd (HTML date já manda certo)
+      dataNascimento 
     };
 
     console.log("Enviando para API:", cliente);
@@ -36,12 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(erro);
       }
 
-      const resultado = await response.json();
-      console.log("Cliente salvo:", resultado);
+    const resultado = await response.json();
+    localStorage.setItem("clienteId", resultado.id);
+    alert("Cadastro realizado com sucesso!");
+    console.log("ID salvo:", localStorage.getItem("clienteId"));
 
-      alert("Cadastro realizado com sucesso!");
-
-      form.reset();
 
     } catch (error) {
       console.error("Erro ao cadastrar:", error);

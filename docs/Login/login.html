@@ -6,9 +6,9 @@
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
 </head>
-<body>
 
-  <header>
+
+<header>
   <h1>Portal Promoções</h1>
 
   <nav class="menu">
@@ -16,27 +16,32 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../Produtos/produto.html">Produtos</a></li>
       <li><a href="../Contato/contato.html">Contato</a></li>
+      <li><a href="../Cadastro/cadastro.html">Cadastre-se / Login</a></li>
     </ul>
   </nav>
 </header>
 
-  <div class="login-container">
+<body>
+
+  <div class="cadastro-container">
     <h2>Login</h2>
-    
 
-    <form>
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Digite seu email" required>
+<form id="formCadastro">
 
-        <label>CPF</label>
-  <input type="password" id="cpf" placeholder="Digite seu cpf"required>
-      <button type="submit">Entrar</button>
+  <label>Email</label>
+  <input type="email" id="email" required>
 
-      <p class="link">
-        Não tem conta? <a href="../Cadastre/cadastre-se.html">Cadastre-se</a>
-      </p>
-    </form>
+  <label>CPF</label>
+  <input type="text" id="cpf" required>
+
+  <button type="submit">Logar</button>
+</form>
+
+<script src="login.js" defer></script>
+
+
+<script src="login.js" defer></script>
+
   </div>
-
 </body>
 </html>
