@@ -78,6 +78,10 @@ header h1{
   gap:20px;
 }
 
+.intro{
+  text-align: center;
+  color: #000000;
+}
 .produto{
   background:#000000;
   border-radius:12px;
