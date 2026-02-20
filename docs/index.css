@@ -10,7 +10,6 @@ body{
   color:#000000;
 }
 
-/* ===== HEADER ===== */
 header{
   padding:20px 10px;
   color: #000000;
@@ -23,7 +22,6 @@ header h1{
   margin-bottom:20px;
 }
 
-/* ===== MENU ===== */
 .menu{
   width:100%;
   background:#000;
@@ -53,14 +51,12 @@ header h1{
   box-shadow:0 5px 15px rgba(58,12,163,0.5);
 }
 
-/* ===== CONTAINER ===== */
 .container{
   max-width:1200px;
   margin:auto;
   padding:15px;
 }
 
-/* ===== SEÇÕES ===== */
 .produtos{
   margin-top:30px;
   padding:20px;
@@ -75,7 +71,6 @@ header h1{
   padding: 10px;
 }
 
-/* ===== LISTA ===== */
 .lista-produtos{
   list-style:none;
   display:grid;
@@ -83,7 +78,6 @@ header h1{
   gap:20px;
 }
 
-/* ===== CARD ===== */
 .produto{
   background:#000000;
   border-radius:12px;
@@ -93,7 +87,6 @@ header h1{
   font-weight:bold;
   width: 100%;
   transition:0.3s;
-  display: flex;
   align-items: center;
   gap: 10px;;
 }
@@ -125,7 +118,6 @@ header h1{
   line-height:1.4;
 }
 
-/* ===== FOOTER ===== */
 footer{
   background:#000;
   padding:25px;
@@ -134,7 +126,6 @@ footer{
   margin-top:40px;
 }
 
-/* ===== MOBILE ===== */
 @media (max-width:600px){
 
   .produto{

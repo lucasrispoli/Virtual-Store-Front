@@ -55,3 +55,40 @@ header h1{
         margin-top:20px;
         font-size: 50px;
     }
+
+.contact {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #000;
+  color: #ffee00;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.btn-email {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffee00;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-email:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
