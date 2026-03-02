@@ -5,111 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Promoções</title>
   <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Portal Promoções</h1>
+<header class="top-header">
+  <div class="header-container">
+    <div class="logo">Portal Promoções</div>
 
-  <nav class="menu">
-    <ul class="submenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Produtos/produto.html">Produtos</a></li>
-      <li><a href="Contato/contato.html">Contato</a></li>
-    </ul>
-  </nav>
+    <nav class="menu">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="Produtos/produto.html">Produtos</a></li>
+        <li><a href="Contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <input type="text" placeholder="Buscar">
+      <span class="login">Login</span>
+      <div class="cart">🛒 <span class="cart-count">0</span></div>
+    </div>
+  </div>
 </header>
 
-<main class="container">
-
-<div class="intro"><h3>Somos a Portal Promoções, aqui você encontra as melhores promoções das principais plataformas</h3></div>
-
-  <section class="produtos">
-    <h2>Produtos em Destaque</h2>
+    <section class="hero">       <img src="../images/banner.png" alt="">
+</section>  
     
-      <ul class="lista-produtos">
-     <li class="produto" data-categoria="roupa">
-    <a href="https://s.shopee.com.br/20q8qN5qtT?share_channel_code=1">
+<section id="produtos" class="produtos">
+  <h2>Promoções em Destaque</h2>
+
+  <ul class="lista-produtos">
+
+    <li class="produto" data-categoria="roupa">
+      <a href="https://s.shopee.com.br/2LSzE6DOXl?share_channel_code=1">
+        <div class="vitrine">
+          <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhxk6bmnk1kz6b.webp" class="img-ativa">
+        </div>
+        <p>
+          Calça Tactel Masculino Elastano Academia Casual Corrida Treino
+          <span class="preco">R$39,20</span>
+        </p>
+      </a>
+    </li>
+
+              <li class="produto" data-categoria="eletronico">
+     <a href="https://s.shopee.com.br/4qALaij9aN?share_channel_code=1"> 
     <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zzq0z47u9uc1.webp" class="img-ativa">
+    <img src="https://down-br.img.susercontent.com/file/br-11134207-7qukw-li30kagh3fe8a4@resize_w450_nl.webp" class="img-ativa">   
+    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mijjj60f4utd0c.webp">
     </div>
-    <p>Calça Legging Feminina Flanelada Térmica<br>R$32,59</p>
+    <p>Amplificador De Imagem Da Tela Do Celula <span class="preco">R$21,99</span></p>
+
     </a>
     </li>
 
-
-          <li class="produto" data-categoria="roupa">
-      <a href="https://s.shopee.com.br/20q8qN5qtT?share_channel_code=1">
+                          <li class="produto" data-categoria="automotivo">
+     <a href="https://s.shopee.com.br/40bGFaDQsa?share_channel_code=1"> 
     <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg3ta1gnyqyo6a.webp" class="img-ativa">  
+    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-me24cyf7fa4j15@resize_w450_nl.webp" class="img-ativa">   
+    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf93wtq449ad4d.webp">
     </div>
-    <p>Short Para Futebol Corrida e Academia Em Poliamida<br>R$43,90</p>
+    <p>Revitalizador De Plástico Automotivo Matrix Cera Moto E Carro Para Choque Original <span class="preco">R$17,98</span></p>
     </a>
     </li>
+    
 
-       <li class="produto" data-categoria="roupa">
-    <a href="https://s.shopee.com.br/20q8qN5qtT?share_channel_code=1">
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zzq0z47u9uc1.webp" class="img-ativa">
-    </div>
-    <p>Calça Legging Feminina Flanelada Térmica<br>R$32,59</p>
-    </a>
-    </li>
-      </ul>
-  </section>
-
-  <section class="produtos">
-    <h2>Promoções Shopee</h2>
-    <ul class="lista-produtos">
-  <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/2g5r0bUAPA?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc94wv7xb17v9a.webp" class="img-ativa">   
-    </div>
-    <p>Relógios Esportivos Smartwatch<br>R$69,90</p>
-    </a>
-    </li>
-    </ul>
-  </section>
-
-  <section class="produtos">
-    <h2>Promoções Mercado Livre</h2>
-    <ul class="lista-produtos">
-           <li class="produto" data-categoria="roupa">
-     <a href="https://s.shopee.com.br/4AudPWE4W5?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbfbrp7fw0rma0@resize_w450_nl.webp" class="img-ativa">   
-    </div>
-    <p>Tênis O2X Shade Fitness Feminino Academia Caminhada Confortável<br>R$39,99 - R$51,95</p>
-  
-    </a>
-    </li>
-      <li class="produto" data-categoria="roupa">
-     <a href="https://s.shopee.com.br/2LSzE6DOXl?share_channel_code=1"> 
-     <div class="vitrine">
-     <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhxk6bmnk1kz6b.webp" class="img-ativa">  
-     </div>
-     <p>Calça Tactel Masculino Elastano Academia Casual Corrida Treino<br>R$39,20</p>
-     </a>
-     </li>
-
-     <li class="produto" data-categoria="roupa">
-      <a href="https://s.shopee.com.br/8AQm8CZ25U">
-      <div class="vitrine">
-      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcwsxy6zccu931@resize_w450_nl.webp" class="img-ativa">
-      </div>
-      <p>Conjunto Fitness Aurora<br>R$ 129,90</p>
-
-       </a>
-      </li>
-      </ul>
-  </section>
-
-</main>
+  </ul>
+</section>
 
 <footer>
-  <p>&copy; 2024 Loja de Produtos. Todos os direitos reservados.</p>
+  © 2026 Portal Promoções - Todos os direitos reservados
 </footer>
+
 </body>
 </html>
