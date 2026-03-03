@@ -3,255 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos</title>
+  <title>Produtos - Portal Promoções</title>
   <link rel="stylesheet" href="produto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<header>
-  <h1>Portal Promoções</h1>
 
-  <nav class="menu">
-    <ul class="submenu">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="produto.html">Produtos</a></li>
-      <li><a href="../Contato/contato.html">Contato</a></li>
-    </ul>
-  </nav>
+<header class="top-header">
+  <div class="header-container">
+    <div class="logo">Portal Promoções</div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="#">Produtos</a></li>
+        <li><a href="../Contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-icons">
+      <input type="text" placeholder="Buscar">
+      <span>Login</span>
+    </div>
+  </div>
 </header>
 
-<main class="layout-produto">
+<section class="pagina-produtos">
 
-  <aside class="filtro">
+  <aside class="sidebar">
     <h3>Filtros</h3>
 
-    <details open>
-      <summary>Categoria</summary>
-      <ul class="submenu">
- 
-        <li><a href="#" onclick="filtrar('roupa')">Roupas</a></li>
-        <li><a href="#" onclick="filtrar('eletronico')">Eletrônicos</a></li>
-        <li><a href="#" onclick="filtrar('automotivo')">Automotivo</a></li>
-        <li><a href="#" onclick="filtrar('pet')">Pet</a></li>
-        <li><a href="#" onclick="filtrar('todos')">Mostrar Todos</a></li>
-     
+    <div class="filtro-box">
+      <h4>Categoria</h4>
+      <ul>
+        <li onclick="filtrar('roupa')">Roupas</li>
+        <li onclick="filtrar('eletronico')">Eletrônicos</li>
+        <li onclick="filtrar('automotivo')">Automotivo</li>
+        <li onclick="filtrar('pet')">Pet</li>
+        <li onclick="filtrar('todos')">Mostrar Todos</li>
       </ul>
-    </details>
+    </div>
 
-    <details>
-      <summary>Preço</summary>
-      <ul class="submenu">
-        <li><a href="#">Até R$100</a></li>
-        <li><a href="#">R$100 – R$200</a></li>
-        <li><a href="#">Acima de R$200</a></li>
+    <div class="filtro-box">
+      <h4>Preço</h4>
+      <ul>
+        <li>Até R$100</li>
+        <li>R$100 – R$200</li>
+        <li>Acima de R$200</li>
       </ul>
-    </details>
+    </div>
 
-
-
-    <details>
-      <summary>Plstaforma</summary>
-      <ul class="submenu">
-        <li><a href="#">Mercado livre</a></li>
-        <li><a href="#">Shopee</a></li>
+    <div class="filtro-box">
+      <h4>Plataforma</h4>
+      <ul>
+        <li>Mercado Livre</li>
+        <li>Shopee</li>
       </ul>
-    </details>
+    </div>
   </aside>
 
-  <section class="grade-produtos">
+  <main class="conteudo-produtos">
 
-    <div class="selecao-produtos">
-      <h4>Principais ofertas</h4>
-
-      <ul class="lista-produtos">
-       
-      <li class="produto" data-categoria="roupa">
-      <a href="https://s.shopee.com.br/8AQm8CZ25U">
-      <div class="vitrine">
-      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcwsxy6zccu931@resize_w450_nl.webp" class="img-ativa">
-      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcwsxy6zccaab7.webp">
-      </div>
-      <p>Conjunto Fitness Aurora<br>R$ 129,90</p>
-
-       </a>
-      </li>
-
-     <li class="produto" data-categoria="roupa">
-     <a href="https://s.shopee.com.br/2LSzE6DOXl?share_channel_code=1"> 
-     <div class="vitrine">
-     <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhxk6bmnk1kz6b.webp" class="img-ativa">  
-     <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhq63xg4ensx71.webp"> 
-     </div>
-     <p>Calça Tactel Masculino Elastano Academia Casual Corrida Treino<br>R$39,20</p>
-     </a>
-     </li>
-
-      <li class="produto" data-categoria="roupa">
-     <a href="https://s.shopee.com.br/4AudPWE4W5?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbfbrp7fw0rma0@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mbfbrp7fum76b6@resize_w450_nl.webp">
-    <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rfi1-m34xpyplvgyx1f.webp">
-    </div>
-    <p>Tênis O2X Shade Fitness Feminino Academia Caminhada Confortável<br>R$39,99 - R$51,95</p>
-  
-    </a>
-    </li>
-
-
-     <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/2g5r0bUAPA?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc94wv7xb17v9a.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc94wv7xducrba.webp">
-    </div>
-    <p>Relógios Esportivos Smartwatch<br>R$69,90</p>
-    </a>
-    </li>
-
-         <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/AKVI8in2fY?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/sg-11134201-23030-8lwvw6dxxgov0c@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/sg-11134201-23030-fks02jexxgov10.webp">
-    </div>
-    <p>Pen Drive Tb 1 2TB Flash<br>R$23,99</p>
-  
-    </a>
-    </li>
-
-
-             <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/1BH3Dxg3Sy?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mgiqg3neio0589.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcx3pvd6t4ox1d.webp">
-    </div>
-    <p>KIT 1/2/5 Suporte De Parede Multifuncional<br>R$7,99</p>
-  
-    </a>
-    </li>
-
-
-    
-             <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/4qALaij9aN?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7qukw-li30kagh3fe8a4@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mijjj60f4utd0c.webp">
-    </div>
-    <p>Amplificador De Imagem Da Tela Do Celular<br>R$21,99</p>
-
-    </a>
-    </li>
-
-                 <li class="produto" data-categoria="eletronico">
-     <a href="https://s.shopee.com.br/8fN49n3M1Q?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma8rmjeljw6u77.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ma8rmjgjig6x99.webp">
-    </div>
-    <p>Suporte Retrovisor de Celular Para Carro Central Extensível Giro 360º Facil Instalação<br>R$23,98</p>
-
-    </a>
-    </li>
-
-                    <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/157UCpXGo?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m6fne4bo77tz70.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m6fne4boa0yv70.webp">
-    </div>
-    <p> Luva de Microfibra lavagem automotiva<br>R$9,99</p>
-    </a>
-    </li>
-
-                      <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/40bGFaDQsa?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-me24cyf7fa4j15@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf93wtq449ad4d.webp">
-    </div>
-    <p>Revitalizador De Plástico Automotivo Matrix Cera Moto E Carro Para Choque Original<br>R$17,98</p>
-    </a>
-    </li>
-
-                      <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/8V3fceKdtx?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mchtrv2cdczlfc.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mchtrv2c6c5d0b.webp">
-    </div>
-    <p>Mini Aspirador de Pó Portátil Automotivo Casa Sem Fio 3 em 1 Potente 6000Pa Recarregável<br>R$27,99</p>
-    </a>
-    </li>
-
-                      <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/10xeg5kedg?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-me67aevr85c100@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdg66t4gl77d7a@resize_w450_nl.webp">
-    </div>
-    <p>Shampoo com Cera de carnaúba pH Neutro para Lavagem de Carro e Moto<br>R$17,98</p>
-    </a>
-    </li>
-
-                          <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/7VB8Q5l5zS?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lz6igeijlzxha8.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdg66t4gl77d7a@resize_w450_nl.webp">
-    </div>
-    <p>Pretinho Limpa Pneu automotivo Gitanes 500ml<br>R$11,89</p>
-    </a>
-    </li>
-
-                             <li class="produto" data-categoria="automotivo">
-     <a href="https://s.shopee.com.br/4fqx3cqQnO?share_channel_code=1"> 
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg9hnw4s4cg0a5@resize_w450_nl.webp" class="img-ativa">   
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mdxmsvy7p4w082@resize_w450_nl.webp">
-    </div>
-    <p>KIT 4UN - Cheirinho Automotivo Aromas de Luxo<br>R$32,19</p>
-    </a>
-    </li>
-
-</ul>
-</div>
-
-<div class="selecao-produtos">
-    <h4>Promoções</h4>
+    <h2>Principais Ofertas</h2>
 
     <ul class="lista-produtos">
+
+      <!-- SEUS PRODUTOS AQUI (mantive apenas 2 de exemplo) -->
+
       <li class="produto" data-categoria="roupa">
-      <a href="https://s.shopee.com.br/20q8qN5qtT?share_channel_code=1">
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg3ta1gnyqyo6a.webp" class="img-ativa">  
-    <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rfgs-m34xpxjfl7co72.webp">   
-    </div>
-    <p>Short Para Futebol Corrida e Academia Em Poliamida<br>R$43,90</p>
-    </a>
-    </li>
+        <a href="#">
+          <div class="vitrine">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhxk6bmnk1kz6b.webp" class="img-ativa">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mhq63xg4ensx71.webp">
+          </div>
+          <p>
+            Calça Tactel Masculino Elastano Academia Casual Corrida Treino
+            <span class="preco">R$39,20</span>
+          </p>
+        </a>
+      </li>
 
-    <li class="produto" data-categoria="roupa">
-    <a href="https://s.shopee.com.br/20q8qN5qtT?share_channel_code=1">
-    <div class="vitrine">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m9zzq0z47u9uc1.webp" class="img-ativa">
-    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcs4ehaj76ddcc.webp"> 
-    </div>
-    <p>Calça Legging Feminina Flanelada Térmica<br>R$32,59</p>
-    </a>
-    </li>
-      </ul>
-    </div>
+      <li class="produto" data-categoria="eletronico">
+        <a href="#">
+          <div class="vitrine">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc94wv7xb17v9a.webp" class="img-ativa">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc94wv7xducrba.webp">
+          </div>
+          <p>
+            Relógio Smartwatch Esportivo
+            <span class="preco">R$69,90</span>
+          </p>
+        </a>
+      </li>
 
-  </section>
+    </ul>
 
-</main>
+  </main>
 
-<footer class="footer">
-  <p>&copy; 2024 Loja de Produtos</p>
+</section>
+
+<footer>
+  © 2026 Portal Promoções - Todos os direitos reservados
 </footer>
-<script src="produto.js"></script>
+
 </body>
 </html>
